@@ -2,7 +2,7 @@
 
 [furikake](https://github.com/inokappa/furikake) in docker.
 
-## Prerequisite
+## Required
 
 - [docker](https://docs.docker.com/)
 - [docker-compose](https://docs.docker.com/compose/)
