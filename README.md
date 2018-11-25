@@ -1,4 +1,4 @@
-# furikake-docker
+# furikake-docker [![Build Status](https://travis-ci.org/inokappa/furikake-docker.svg?branch=master)](https://travis-ci.org/inokappa/furikake-docker)
 
 [furikake](https://github.com/inokappa/furikake) in docker.
 
