@@ -1,7 +1,6 @@
 version: '3'
 services:
     furikake:
-      image: ruby:latest
       build: .
       container_name: furikake
       environment:
@@ -10,11 +9,12 @@ services:
         - AWS_REGION
         - AWS_DEFAULT_REGION
         - AWS_PROFILE
+        - BACKLOG_API_KEY
+        - TZ=Asia/Tokyo
       volumes:
         - $HOME/.aws:/root/.aws
         - .:/work
       working_dir: /work
       entrypoint:
         - furikake
-      command:
-        - help
+      command: [ "monitor" ]

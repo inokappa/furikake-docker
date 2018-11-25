@@ -1,0 +1,8 @@
+sudo: required
+language: ruby
+services:
+  - docker
+before_script:
+  - docker build -t furikake .
+script:
+  - docker run -t -i --rm furikake version

@@ -1,5 +1,7 @@
-FROM ruby:latest
+FROM ruby:alpine
 MAINTAINER inokappa
-RUN gem install furikake --no-ri --no-rdoc
+RUN apk update && \
+    apk --no-chache --update add tzdata && \
+    gem install furikake --no-ri --no-rdoc
 ENTRYPOINT ["furikake"]
 CMD ["help"]
