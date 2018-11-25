@@ -49,3 +49,17 @@ $ docker-compose run --rm furikake show
 ```sh
 $ docker-compose run --rm furikake publish
 ```
+
+### Run furikake monitor
+
+```sh
+$ docker-compose up -d
+```
+
+If you want to modify the value of `interval`, please modify docker-compose.yml as follows.
+
+```yaml
+...
+      command: [ "monitor", "--inverval=10" ]
+...
+```
